@@ -28,4 +28,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 
-## USAGE
+## Usage
+### Homepage screen
+![alt text](./Assets/heroku%20app%20screen/homepage.PNG "homepage")
+
