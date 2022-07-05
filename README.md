@@ -29,6 +29,20 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 
 ## Usage
-### Homepage screen
+
+### Homepage screen, Heroku App
 ![alt text](./Assets/heroku%20app%20screen/homepage.PNG "homepage")
 
+### Write notes in Note Taker, Heroku App
+![alt text](./Assets/heroku%20app%20screen/notetaker%20write.PNG "writing file")
+
+### Saved notes in Note Taker, Heroku App
+![alt text](./Assets/heroku%20app%20screen/notetaker%20saved%20file.PNG.PNG "saving file")
+
+
+## URLs
+
+### GitHub repository
+https://github.com/mattesanna017/week-11-homework
+### Heroku App 
+https://note-taker-1122.herokuapp.com/
