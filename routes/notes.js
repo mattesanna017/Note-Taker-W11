@@ -13,7 +13,6 @@ notes.post('/', (req, res) => {
     console.info(`${req.method} has been request received`);
 
 
-   
     const { title,text } = req.body;
   
  
@@ -37,21 +36,24 @@ notes.post('/', (req, res) => {
     } else {
       res.json('Error in posting text');
     }
-  });
+  
+});
+  
+notes.delete('/:text_id', (req, res) => {
 
-  notes.delete('/api/notes/:text_id', (req, res) => {
-    const noTextId = req.params.text_id;
+    const delTextId = req.params.text_id;
+    
     readFromFile('./db/db.json')
       .then((data) => JSON.parse(data))
       .then((json) => {
         
-        const result = json.filter((notes) => notes.text_id !== noTextId);
+        const response = json.filter((notes) => notes.text_id !== delTextId);
   
-        writeToFile('./db/db.json', result);
+        writeToFile('./db/db.json', response);
   
-        res.json(`Item ${noTextId} has been deleted `);
+        res.json(`Item ${delTextId} has been deleted `);
       });
-  });
+});
 
 
  
