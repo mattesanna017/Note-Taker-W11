@@ -1,6 +1,6 @@
 const notes = require('express').Router();
 const uuid = require('../helpers/uuid');
-const { readFromFile, readAndAppend} = require('../helpers/fsUtils');
+const { readFromFile, readAndAppend, writeToFile} = require('../helpers/fsUtils');
 
 
 notes.get('/', (req,res) => {
@@ -40,16 +40,16 @@ notes.post('/', (req, res) => {
   });
 
   notes.delete('/:text_id', (req, res) => {
-    const textId = req.params.text_id;
+    const noTextId = req.params.text_id;
     readFromFile('./db/db.json')
       .then((data) => JSON.parse(data))
       .then((json) => {
         
-        const result = json.filter((notes) => notes.text_id !== textId);
+        const result = json.filter((notes) => notes.text_id !== noTextId);
   
         writeToFile('./db/db.json', result);
   
-        res.json(`Item ${textId} has been deleted 🗑️`);
+        res.json(`Item ${noTextId} has been deleted `);
       });
   });
 
