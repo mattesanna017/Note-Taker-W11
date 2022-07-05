@@ -37,7 +37,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ![alt text](./Assets/heroku%20app%20screen/notetaker%20write.PNG "writing file")
 
 ### Saved notes in Note Taker, Heroku App
-![alt text](./Assets/heroku%20app%20screen/notetaker%20saved%20file.PNG.PNG "saving file")
+![alt text](./Assets/heroku%20app%20screen/notetakerSaved.PNG "saveFile")
 
 
 ## URLs
