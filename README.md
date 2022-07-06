@@ -39,6 +39,10 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ### Saved notes in Note Taker, Heroku App
 ![alt text](./Assets/heroku%20app%20screen/notetakerSaved.PNG "saveFile")
 
+### Delete notes in Note Taker (press bin button), Heroku App
+![alt text](./Assets/heroku%20app%20screen/delete%20function.PNG "deleteFile")
+
+
 
 ## URLs
 
