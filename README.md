@@ -33,7 +33,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ### Homepage screen, Heroku App
 ![alt text](./Assets/heroku%20app%20screen/homepage.PNG "homepage")
 
-### Write notes in Note Taker, Heroku App
+### Write notes in Note Taker (press memory card to save notes), Heroku App
 ![alt text](./Assets/heroku%20app%20screen/notetaker%20write.PNG "writing file")
 
 ### Saved notes in Note Taker, Heroku App
